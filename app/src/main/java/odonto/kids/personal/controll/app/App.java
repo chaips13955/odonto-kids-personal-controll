@@ -10,12 +10,12 @@ import static odonto.kids.personal.controll.utilities.StringUtils.split;
 import static odonto.kids.personal.controll.app.MessageUtils.getMessage;
 
 import org.apache.commons.text.WordUtils;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class App {
     public static void main(String[] args) {
-        LinkedList tokens;
-        tokens = split(getMessage());
-        String result = join(tokens);
-        System.out.println(WordUtils.capitalize(result));
+   SpringApplication.run(App.class, args);
     }
 }
