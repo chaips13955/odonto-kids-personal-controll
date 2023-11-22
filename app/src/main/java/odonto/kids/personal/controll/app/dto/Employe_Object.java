@@ -1,4 +1,4 @@
-package odonto.kids.personal.controll.app.Model;
+package odonto.kids.personal.controll.app.dto;
 
 import lombok.Data;
 

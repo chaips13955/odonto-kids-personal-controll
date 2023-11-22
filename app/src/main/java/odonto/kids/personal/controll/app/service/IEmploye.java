@@ -1,10 +1,11 @@
 package odonto.kids.personal.controll.app.service;
 
-import odonto.kids.personal.controll.app.Model.Employe_Model;
-//import org.springframework.data.repository.CrudRepository;
+import odonto.kids.personal.controll.app.dto.EmployeeDTO;
+import odonto.kids.personal.controll.app.model.Employee_Model;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
+@Repository
+public interface IEmploye extends CrudRepository <Employee_Model, Integer>{
 
-//public interface IEmploye extends CrudRepository <Employe_Model, Integer>{
-
-//}
+}
